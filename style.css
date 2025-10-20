@@ -1,6 +1,7 @@
 *{
     margin: 0;
     padding: 0;
+    border: none;
 }
 .fundo{
     background-color: gainsboro;
@@ -11,17 +12,28 @@
 .calculadora{
     position: absolute;
     background-color: rgb(247, 102, 6);
-    margin-top: 15%;
+    margin-top: 10%;
     margin-left: 50%;
     transform:translate( -50%, 50%);
     border-radius: 5%;
     padding: 20px;
 }
+h1, p{
+    margin-left: 4px;
+}
 .botão{
     background-color: rgb(78, 78, 78);
     height: 50px;
     width: 50px;
+    cursor: pointer;
+    margin: 2px;
 }
 .botão:hover{
     background-color: darkorange;
+}
+#resultado{
+    background-color: rgb(78, 78, 78);
+    width: 218px;
+    height: 25px;
+    padding-top: 5px;
 }
