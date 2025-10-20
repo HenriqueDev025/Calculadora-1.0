@@ -1,0 +1,27 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.fundo{
+    background-color: gainsboro;
+    height: 100%;
+    color: #000000;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.calculadora{
+    position: absolute;
+    background-color: rgb(247, 102, 6);
+    margin-top: 15%;
+    margin-left: 50%;
+    transform:translate( -50%, 50%);
+    border-radius: 5%;
+    padding: 20px;
+}
+.botão{
+    background-color: rgb(78, 78, 78);
+    height: 50px;
+    width: 50px;
+}
+.botão:hover{
+    background-color: darkorange;
+}
