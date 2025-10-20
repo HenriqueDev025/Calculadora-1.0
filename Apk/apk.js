@@ -1,26 +1,18 @@
-function insert(num)
-{
-    var numero = document.getElementById('resultado').innerHTML;
-    document.getElementById('resultado').innerHTML = numero + num
+function insertToDisplay(data){
+    document.querySelector('#display').value += data
 }
 function clean(){
-    document.getElementById('resultado').innerHTML = ""
+    document.querySelector('#display').value = ''
 }
-function back()
-{
-    var resultado = document.getElementById('resultado').innerHTML;
-    document.getElementById('resultado').innerHTML = resultado.substring(0, resultado.length -1);
+function voltar(){
+    const display = document.querySelector('#display')
+    display.value = display.value.slice(0, -1)
 }
-function calcular()
-{
-   var resultado = document.getElementById('resultado').innerHTML;
-   if(resultado)
-   {
-    document.getElementById('resultado').innerHTML = eval(resultado)
-   }
-   else
-   {
-    document.getElementById('resultado').innerHTML = " Nada..."
-   }
-  
+function resultado(){
+    const display = document.querySelector('#display')
+    try {
+        display.value = eval(display.value)
+    }catch{
+
+    }
 }
